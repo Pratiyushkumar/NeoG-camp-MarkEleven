@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Yaldevi:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d56b2;
+}
+
+.birthday-app-container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 140px 0 140px;
+  color: #200209;
+}
+
+.birthday-app-container h1 {
+  font-family: "Yaldevi", sans-serif;
+  margin-bottom: 20px;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.detail-Container {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-Container input {
+  margin: 15px;
+  width: 22rem;
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.detail-Container label {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+.output-text {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  margin: 20px;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+#btnClick {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  left: 9rem;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1b0207;
+}
