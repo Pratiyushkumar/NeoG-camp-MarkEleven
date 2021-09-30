@@ -8,16 +8,15 @@ btnClicked.addEventListener("click", () => {
 });
 
 function findLuckyBirthday() {
-  let result;
   let dob = dateOfBirth.value;
   let number = Number(luckyNumber.value);
-  // console.log(dob, number);
-  if (dob !== "" && (number !== "" || number > 0)) {
-    result = evluateDOB(dob);
+  let result = evluateDOB(dob);
+  if (dob !== "" && number > 0) {
+    isBirthDayLucky(result, number);
   } else {
     output.innerHTML = "Please Enter the valid input 😠";
+    alert("Please Enter the valid input 😠");
   }
-  isBirthDayLucky(result, number);
 }
 
 function evluateDOB(dob) {
