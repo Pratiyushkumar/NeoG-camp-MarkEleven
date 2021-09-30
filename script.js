@@ -10,8 +10,9 @@ btnClicked.addEventListener("click", () => {
 function findLuckyBirthday() {
   let result;
   let dob = dateOfBirth.value;
-  let number = luckyNumber.value;
-  if (dob && number) {
+  let number = Number(luckyNumber.value);
+  // console.log(dob, number);
+  if (dob !== "" && (number !== "" || number > 0)) {
     result = evluateDOB(dob);
   } else {
     output.innerHTML = "Please Enter the valid input 😠";
@@ -30,7 +31,7 @@ function evluateDOB(dob) {
 
 function isBirthDayLucky(result, number) {
   if (result % number === 0) {
-    output.innerHTML = "Yay! you'r B'day is Lucky 🥳";
+    output.innerHTML = "Yayy! you'r B'day is Lucky 🥳";
   } else {
     output.innerHTML = "oops! you'r B'day is unLucky 😭";
   }
